@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche Taycan</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="header__menu">
+                <img class="header__icon" src="./assets/icons/menu-icon.svg" alt="Icono del menú">
+                <p class="header__p">Menú</p>
+            </div>
+            <div class="logo">
+                <img class="img__logo" src="./assets/porsche-logo.svg" alt="Logo de Porsche">
+            </div>
+            <div class="user">
+                <img class="img__user" src="./assets/icons/user-icon.svg" alt="Icono usuario">
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="container">
+        <section id="coches" class="hero">
+            <video id="video" autoplay loop muted>
+                <source src="./assets/videos/video_fondo.mp4" type="video/mp4">
+            </video>
+
+            <div class="taycan">
+                <img src="./assets/taycan_logo.svg" alt="Logo de Taycan" class="logo__taycan">
+            </div>
+            <div class="coche">
+                <img id="imagen" class="img__taycan" src="./assets/cars/models/taycan-berlina.avif" alt="Imagen de modelo Taycan">
+            </div>
+            <div class="div__button">
+                <button id="boton1" onclick="botonCoches('berlina')" class="button button__berlina">Berlina deportiva</button>
+                <button id="boton2" onclick="botonCoches('sport')" class="button button__sport">Sport turismo</button>
+                <button id="boton3" onclick="botonCoches('cross')" class="button button__cross">Cross turismo</button>
+            </div>
+            <div class="caja">
+                <h1 id="nombre" class="div__h1">Taycan</h1>
+                <p class="div__p">Eléctrico</p>
+                <p id="precio" class="div__precio">Desde EUR 106.252,00 PVP Recomendado <sup>1</sup> </p>
+            </div>
+            <div class="button__div">
+                <button  class="boton boton__modelo">Cambiar modelo</button>
+                <button  class="boton ">Configurar</button>
+                <button  class="boton ">Comprar vehículos nuevos y de ocasión</button>
+            </div>
+            <div class="caja__p">
+                <p id="descripcion" class="p__descripcion">Consumo eléctrico combinado - WLTP* (intervalo modelo): 19,4 - 16,7 kWh/100
+                    km, Consumo eléctrico bajo - WLTP* (intervalo modelo): 16,6 - 14,4 kWh/100 km, Consumo eléctrico
+                    medio - WLTP* (intervalo modelo): 16,6 - 13,8 kWh/100 km, Consumo eléctrico alto - WLTP* (intervalo
+                    modelo): 17,6 - 14,2 kWh/100 km, Consumo eléctrico muy alto - WLTP*
+                    (intervalo modelo): 22,8 - 18,2 kWh/100 km, Autonomía eléctrica en ciudad - WLTP* (intervalo
+                    modelo): 593 - 824 km, Autonomía eléctrica combinado - WLTP* (intervalo modelo):
+                    521 - 680 km, Emisiones CO2 combinado (Gasolina y BEV)/ combinado ponderado (PHEV) - WLTP*
+                    (intervalo modelo): 0 - 0 g/km. 
+                    <br> <sup>1</sup> P.V.P. recomendado para península y Baleares. Incluye transporte, I.V.A. e impuesto de
+                        matriculación (IEDMT) calculado al tipo estatal aplicable según las emisiones de CO2 del
+                        vehículo.
+                    <br>
+                    El IEDMT puede variar en función de la Comunidad Autónoma donde se ubique su domicilio. Los
+                        precios aquí reflejados pueden sufrir modificaciones, y por tanto no son vinculantes.</p>
+                    
+
+                </p>
+                <!-- <div class="caja__descripcion">
+                    <p class="p__descripcion">
+                        1P.V.P. recomendado para península y Baleares. Incluye transporte, I.V.A. e impuesto de
+                        matriculación (IEDMT) calculado al tipo estatal aplicable según las emisiones de CO2 del
+                        vehículo.
+                        <br>
+                        El IEDMT puede variar en función de la Comunidad Autónoma donde se ubique su domicilio. Los
+                        precios aquí reflejados pueden sufrir modificaciones, y por tanto no son vinculantes.
+
+                    </p>
+                </div> -->
+            </div>
+
+        </section>
+       </div>
+
+       <section id="section">
+        <div class="container--datos">
+        <div class="datos">
+            <p id="aceleration" class="numeros__p">4,8 <span class="span">s</span></p>
+            <p class="descripcion__p">Aceleración 0-100 km/h con Launch Control</p>
+        </div>
+<div class="datos">
+            <p id="powerKw" class="numeros__p">300 <span class="span">kW/</span id="powerCv">  408 <span class="span">cv</span></p>
+            <p class="descripcion__p">Potencia máxima (kW)/Potencia máxima (CV) <br>
+            Más detalles sobre el método de medición en </p>
+        </div>
+         <div class="datos">
+            <p id="speed" class="numeros__p">230 <span class="span">km/h</span></p>
+            <p class="descripcion__p">Velocidad máxima</p>
+        </div>
+        <div class="ultimo__boton">
+            <a class="boton__a" href="#">Todos los detalles técnicos</a>
+        </div>
+        </div>
+        <div class="coche__frontal">
+            <img id="imagenFrontal" src="./assets/cars/front/frente-taycan-berlina.avif" alt="" class="frontal__coche">
+        </div>
+       </section>
+       
+    </main>
+
+    <footer class="footer">
+        
+        <div class="footer__logo">
+            <img class="footer__img" src="./assets/porsche-logo.svg" alt="logo de Porsche">
+        </div>
+        <hr class="hr">
+        <div class="footer__div">
+        <p class="footer__copy">
+            © 2025 Porsche Ibérica, S.A. 
+        </p>
+        <a class="footer__a" href="#">Aviso legal</a>
+        <a class="footer__a" href="#">Política de cookies</a>
+        <a class="footer__a" href="#">Política de privacidad</a>
+        <a class="footer__a" href="#">Otros países</a>
+        <a class="footer__a" href="#">Open Source Software Notice</a>
+        <a class="footer__a" href="#">Sistema de Denuncia de Irregularidades.</a>
+   </div>
+   
+    </footer>
+
+
+
+<script src="./js/countUp.umd.js"></script>
+
+<script src="./js/script.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+const aceleration = new countUp.CountUp('aceleration', 4.8, {startVal: 0, decimal:".", decimalPlaces: 1, duration: 2});
+const kw = new countUp.CountUp('powerKw', 300, {startVal: 0, duration: 2});
+const cv = new countUp.CountUp('powerCv', 408, {startVal: 0, duration: 2});
+const speed = new countUp.CountUp('speed', 230, {startVal: 0, duration: 2});
+
+const container = document.querySelector(".container--datos");
+
+
+  /* Con esta parte conseguimos facer que o contador comece a funcionar cando o usuario che a el*/
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        if (!kw.error) kw.start();
+        if (!cv.error) cv.start();
+        if (!aceleration.error) aceleration.start();
+        if (!speed.error) speed.start();
+        obs.disconnect();
+      }
+    });
+  }, { threshold: 0.4 });
+
+  observer.observe(container);
+});
+
+
+    </script>
+</body>
+
+</html>

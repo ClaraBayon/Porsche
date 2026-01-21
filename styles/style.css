@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html{
+     font-size: 14px;
+     scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'nextRegular';
+    src: url(./fonts/PorscheNext-normal-400-100.ttf);
+}
+
+@font-face {
+    font-family: 'next700';
+    src: url(./fonts/PorscheNext-normal-700-100.ttf);
+}
+@font-face {
+    font-family: 'nextw400';
+    src: url(./fonts/PorscheNextWLa-normal-400-100.ttf);
+}
+@font-face {
+    font-family: 'nextw700';
+    src: url(./fonts/PorscheNextWLa-normal-700-100.ttf);
+}
+:root{
+    --font--primary: 'nextRegular';
+    --font-secondary: 'next700';
+    --font-tertiary: 'nextw400';
+    --font-quaternary: 'nextw700';
+    --color-primary: rgba(1, 2, 5, 1);
+    --color-secondary: rgba(107, 109, 112, 1);
+    --color-tertiary: rgba(255, 255, 255, 1);
+    
+
+}
+body {
+ background: white;
+ color: black;
+ -webkit-font-smoothing: antialiased;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+}
+
+body, input, button {
+
+ font-family: sans-serif;
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Estilos generales */
+
+/* HEADER */
+
+.header{
+    max-width: 100%;
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.header__menu{
+    display: flex;
+    
+}
+
+.header__icon{
+    width: 20px;
+
+}
+
+.header__p{
+    font-family: var(--font--primary);
+    font-size: 16px;
+    color: var(--color-tertiary);
+
+}
+
+.img__logo{
+    width: 240px;
+
+}
+
+.img__user{
+    width: 20px;
+}
+
+/* MAIN */
+
+.main{
+    flex: 1;
+}
+#video{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 60%;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.taycan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 70px;
+    
+}
+.logo__taycan{
+    width: 681.38px;
+    
+}
+.coche{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    
+}
+.img__taycan{
+    width: 1011px;
+    
+}
+
+/* Botones */
+
+.div__button{
+    position: relative;
+    top: 70px;
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+}
+.button{
+    border: 0px;
+    font-family: var(--font-primary);
+    font-size: 16px;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    height: 30px;
+}
+
+.boton--active::after{
+     content: "";
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.button:hover::after{
+    content: "";
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.boton:active::after{
+    content: "";
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.boton:focus::after{
+        content: "";
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.caja{
+    position: relative;
+    top: 90px;
+    
+
+}
+.div__h1{
+    font-family: var(--font-secondary);
+    color: var(--color-primary);
+    font-size: 68px;
+    text-align: center;
+    line-height: 82px;
+    
+}
+
+.div__p{
+    color: var(--color-primary);
+    font-family: var(--color-primary);
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-weight: 400;
+
+}
+
+.div__precio{
+    font-family: var(--font-quaternary);
+    font-size: 16px;
+    font-weight: 700;
+    font-style: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+}
+
+/* Segundos botones */
+
+.button__div{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+    margin-top: 2rem;
+}
+
+.boton{
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 1rem;
+    border: 2px solid rgba(1, 2, 5, 1);
+    border-radius: 4px;
+
+
+}
+
+.boton__modelo{
+    border: 2px solid rgba(1, 2, 5, 1);
+    border-radius: 4px;
+    background-color: rgba(1, 2, 5, 1);
+    color: var(--color-tertiary)
+}
+
+.caja__p{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.p__descripcion{
+    font-family: var(--font--primary);
+    color: var(--color-secondary);
+    font-size: 15px;
+    max-width: 800px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.caja__descripcion{
+    margin-top: 2rem;
+    text-align: center;
+    
+}
+
+
+/* Segunda sección */
+
+#section{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+    border-top: 1px dashed rgba(151, 71, 255, 1);
+}
+
+/* .datos{
+    margin: 10rem;
+} */
+
+.container--datos{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 0px 5rem;
+}
+
+.numeros__p{
+    color: var(--color-primary);
+    font-family: var(--font--primary);
+    font-size: 80px;
+    font-weight: 400;
+
+}
+.span{
+    font-family: var(--font-primary);
+    font-size: 28px;
+    font-weight: 400;
+
+}
+.descripcion__p{
+    font-family: var(--font-primary);
+    color: var(--color-secondary);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.ultimo__boton{
+    border: 1px solid;
+    border-radius: 4px;
+    width: 200px;
+    padding: 1rem;
+
+}
+.boton__a{
+    text-decoration: none;
+    color: var(--color-primary);
+    font-family: var(--font--primary);
+
+}
+
+/* Imagen frontal coche */
+
+.coche__frontal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.frontal__coche{
+    width: 649.75px;
+    padding: 0px 1rem;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: var(--color-primary);
+    margin-top: 3rem;
+    
+}
+
+.footer__logo{
+    display: flex;
+    justify-content: center;
+    padding: 5.5rem 0 5rem;
+}
+
+.footer__img{
+    width: 240px;
+}
+
+.hr{
+    margin: 2rem 4rem;
+    background-color: var(--color-secondary);
+}
+
+.footer__div{
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 3rem;
+}
+.footer__copy{
+    color: var(--color-tertiary);
+    font-family: var(--font--primary);
+    font-size: 16px;
+    font-weight: 400;
+
+
+}
+
+.footer__a{
+    color: var(--color-tertiary);
+    font-family: var(--color-primary);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+/* Media queries */
+
+
+@media (max-width: 768px) {
+  
+    .logo__taycan{
+        width: 250px;
+    }
+
+    .img__taycan{
+        width: 300px;
+    }
+
+
+    .button__div{
+        display: flex;
+        flex-direction: column;
+    }
+    .caja__p{
+      padding: 1rem;
+      max-width: 600px;
+    }
+    .p__descripcion{
+        font-size: clamp(10px, 11px, 15px);
+        
+    }
+    #section{
+        
+       padding: 4rem;
+    }
+    .numeros__p{
+         display: flex;
+        flex-direction: column;
+        font-size: clamp(1.3rem, 2.5vw, 1.5rem);
+    }
+    .descripcion__p{
+        font-size: clamp(1rem, 10px, 2rem);
+    }
+    .ultimo__boton{
+        padding: 0.5rem;
+        text-align: center;
+    }
+    .frontal__coche{
+        width: 200px;
+    }
+}
