@@ -416,6 +416,7 @@ button {
     .button__div{
         display: flex;
         flex-direction: column;
+        margin-top: 8rem;
     }
     .caja__p{
       padding: 1rem;
@@ -444,4 +445,105 @@ button {
     .frontal__coche{
         width: 200px;
     }
+}
+
+@media (max-width: 480px) {
+
+ 
+    #section{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 180px;
+        padding: 2rem 1.5rem;
+    }
+    .button__div{
+        margin-top: 12rem;
+    }
+    .container--datos{
+        width: 100%;
+        padding: 1.5rem;
+        margin: 0;
+        gap: 3rem;
+    }
+
+    .numeros__p{
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .span{
+        font-size: 1.2rem;
+    }
+
+    .descripcion__p{
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .ultimo__boton{
+        width: 100%;
+        max-width: 260px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+   
+    .frontal__coche{
+        width: 100%;
+        max-width: 320px;
+        margin-top: 2rem;
+    }
+}
+@media (max-width: 393px) {
+    @media (max-width: 393px) {
+
+  
+    #section{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
+        padding: 1.5rem 1rem;
+    }
+
+    .button__div{
+        margin-top: 5rem;
+    }
+    .container--datos{
+        padding: 1rem;
+        margin: 0;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .numeros__p{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .span{
+        font-size: 1.1rem;
+    }
+
+    .descripcion__p{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+ 
+    .ultimo__boton{
+        width: 100%;
+        max-width: 240px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    .frontal__coche{
+        width: 100%;
+        max-width: 260px;
+    }
+}
+
+  
 }
